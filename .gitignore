@@ -1,0 +1,30 @@
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+secrets/
+*.pfx
+*.key
+*.pem
+
+# Cliente, assets e dados proprietários
+client/
+assets/local/
+artifacts/proprietary/
+
+# .NET e IDEs
+bin/
+obj/
+.vs/
+.idea/
+*.user
+
+# Containers, bancos e telemetria local
+.data/
+backups/
+telemetry/
+evidence/local/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
