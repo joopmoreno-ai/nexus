@@ -1,0 +1,39 @@
+schema_version: 1
+status: selected-pending-license-review
+observed_at_utc: 2026-10-24T19:27:42Z
+last_validated_on: 2026-10-25
+candidate_set: aastra-aaemu-bootstrap-2026-10-24
+sources:
+  - id: aaemu
+    kind: git
+    canonical_url: https://github.com/AAEmu/AAEmu.git
+    branch_observed: develop
+    commit: 9549c76bd2c676fb6e3f6a2f2787e1113603cf6a
+    commit_date_utc: 2026-10-21T17:02:01Z
+    commit_signature_verified: false
+    commit_signature_reason: signature-present-public-key-unavailable
+    license_expression: NOASSERTION
+    license_review:
+      readme_claim: LGPL-3.0-or-later
+      files_observed:
+        - path: LICENSE.GPL
+          content_observed: GPL-3.0
+          sha256: 230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809
+        - path: LICENSE.MIT
+          content_observed: MIT
+          sha256: dc9a5e31062acb7d238c861ea87661aaca9cc35cd9d9b1843c4810ba8ab0b129
+      disposition: clarification-required-before-distribution
+    target_client: ArcheAge 1.2 r208022
+    local_alias: .data/sources/AAEmu
+    checks:
+      asset_inventory: passed-local-client-launcher-server-compact
+      dotnet_sdk: 10.0.302-present
+      global_json: invalid-sdk-version-10.0.0
+      build: success-with-nu1902-messagepack-3.1.7
+      unit_tests: 1150-passed-0-failed-0-skipped
+      standalone_startup: login-game-loopback-passed
+      baseline_dump_restore: 38-tables-restored-checked-row-counts-matched
+notes:
+  - Branch names are discovery inputs only; the commit is the reproducible ref.
+  - This manifest does not grant rights to obtain or distribute client assets.
+  - Build and unit tests bypassed global.json by invoking .NET from the Projeto Aastra root.

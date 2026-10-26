@@ -1,5 +1,8 @@
 # Runbook 000 — Baseline reproduzível do NexusLab
 
+**Status:** histórico, substituído pela ADR 001 e pelo Runbook 001 em
+2026-10-24. Não executar para o baseline vigente do Projeto Aastra.
+
 ## Objetivo
 
 Obter uma baseline local do NexusForever que possa ser construída, iniciada,

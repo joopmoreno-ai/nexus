@@ -9,6 +9,7 @@ secrets/
 
 # Cliente, assets e dados proprietários
 client/
+/AAEmu/
 assets/local/
 artifacts/proprietary/
 

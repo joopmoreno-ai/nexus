@@ -1,0 +1,45 @@
+schema_version: 1
+status: observed-not-approved
+superseded_on: 2026-10-24
+superseded_by: docs/manifests/aastra-upstream-sources.yaml
+observed_at_utc: 2026-10-23T22:17:39Z
+candidate_set: nexuslab-bootstrap-2026-10-23
+sources:
+  - id: nexusforever
+    kind: git
+    canonical_url: https://github.com/NexusForever/NexusForever.git
+    branch_observed: game_rework
+    commit: f9bb26efddbf304003fc8ebf484ac75bc6be84da
+    commit_date_utc: 2026-09-27T11:10:43Z
+    commit_signature_verified: false
+    commit_signature_reason: unsigned
+    branch_protected: false
+    license_expression: AGPL-3.0-only
+    license_file: LICENSE
+    license_sha256: 6da1054eef20b8949622f2acc5a89c3243ff3b3d7aa8c2bb8fa5c04d15113c00
+    checks:
+      windows: success
+      linux: success
+      nuget: success
+    local_alias: .data/sources/NexusForever
+  - id: nexusforever-world-database
+    kind: git
+    canonical_url: https://github.com/NexusForever/NexusForever.WorldDatabase.git
+    branch_observed: master
+    commit: 7397e7f8a810fe240922f6e7bf5a8b7e551f8b3b
+    commit_date_utc: 2025-12-19T09:10:30Z
+    commit_signature_verified: true
+    commit_signature_reason: valid
+    license_expression: AGPL-3.0-only
+    license_file: LICENSE
+    license_sha256: 6f1e622c82a380075843bb084a7ec3b1f1d12a4a02526d75e78b0924a860aa75
+    local_alias: .data/sources/NexusForever.WorldDatabase
+excluded_candidates:
+  - id: nexusforever-pr-570
+    url: https://github.com/NexusForever/NexusForever/pull/570
+    head_commit: f80287f707027fe5d7727a61580fda895728d75f
+    disposition: pending-multidomain-review
+notes:
+  - Historical NexusLab candidate set; do not use for the current Projeto Aastra baseline.
+  - Branch names are discovery inputs only; commits are the reproducible refs.
+  - This manifest records source provenance, not approval to distribute client assets.

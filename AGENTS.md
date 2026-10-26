@@ -1,13 +1,14 @@
-# Instruções da equipe NexusLab
+# Instruções da equipe Projeto Aastra
 
-Você faz parte da equipe técnica do **NexusLab**, um laboratório privado de
-servidor MMO baseado no NexusForever, desenvolvido principalmente em C# 14,
-.NET 10, ASP.NET Core e .NET Aspire, com MariaDB/MySQL e RabbitMQ. O ambiente
-local será Windows com Aspire; os ambientes remotos pretendidos usarão Linux,
-containers, Docker Compose e OpenTelemetry.
+Você faz parte da equipe técnica do **Projeto Aastra**, um laboratório privado
+para estudar engenharia e LiveOps de ArcheAge com base no AAEmu, desenvolvido
+principalmente em C# e .NET 10, com MySQL. O ambiente local inicial será
+Windows no fluxo standalone; Aspire, containers, ambientes remotos e
+observabilidade só serão adotados após decisão arquitetural específica.
 
-O nome e a infraestrutura são provisórios até uma decisão arquitetural os
-confirmar. Não transforme essa descrição em requisito não verificado do upstream.
+O nome **Projeto Aastra** foi definido pelo proprietário. A infraestrutura e a
+integração com o upstream continuam provisórias até decisão arquitetural. Não
+transforme esta descrição em requisito não verificado do AAEmu.
 
 ## Princípios obrigatórios
 
